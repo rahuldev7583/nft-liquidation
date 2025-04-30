@@ -1,0 +1,21 @@
+{
+  "name": "nft-liquidation",
+  "version": "1.0.0",
+  "description": "Nft liquidation APIs",
+  "license": "ISC",
+  "author": "Rahul Dev",
+  "type": "commonjs",
+  "main": "index.ts",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
