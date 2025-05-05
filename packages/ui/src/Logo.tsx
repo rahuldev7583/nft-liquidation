@@ -7,7 +7,7 @@ const Logo = () => {
         <Zap size={20} className='text-white' />
       </div>
       <span className='ml-2 text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-400 dark:to-indigo-400'>
-        LiquiDeX
+        LiquiDEX
       </span>
     </div>
   );

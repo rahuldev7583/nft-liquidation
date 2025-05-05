@@ -1,12 +1,14 @@
 import Landing from './components/Landing';
-import { SolanaProvider } from './components/SolanaProvider';
 
 export default function Home() {
   return (
-    <div>
-      <SolanaProvider>
+    <>
+      <div
+        className=' '
+        // style={{ backgroundImage: 'url("/bg.jpg")' }}
+      >
         <Landing />
-      </SolanaProvider>
-    </div>
+      </div>
+    </>
   );
 }
