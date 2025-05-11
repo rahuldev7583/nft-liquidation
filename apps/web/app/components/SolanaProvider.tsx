@@ -18,6 +18,7 @@ interface SolanaProviderProps {
 }
 
 const DEVNET_SOL_API = process.env.NEXT_PUBLIC_DEVNET_SOL_API || '';
+const MAINNET_SOL_API = process.env.NEXT_PUBLIC_MAINNET_SOL_API || '';
 
 export const SolanaProvider: FC<SolanaProviderProps> = ({ children }) => {
   const endpoint = useMemo(() => DEVNET_SOL_API, []);
