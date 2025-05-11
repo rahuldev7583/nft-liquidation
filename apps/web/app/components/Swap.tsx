@@ -40,11 +40,16 @@ const Swap = () => {
   }, [wallet, wallet.publicKey, wallet.connected]);
 
   const handleSwap = async () => {
-    setIsSwap(true);
-
     console.log({ selectedNFT, selectedToken });
 
-    if (wallet && wallet.connected && signMessage) {
+    if (
+      wallet &&
+      wallet.connected &&
+      signMessage &&
+      selectedNFT &&
+      selectedToken
+    ) {
+      setIsSwap(true);
       const message = `Auth for NFT-SPL Swap: ${Date.now()}`;
       console.log({ message });
 
@@ -159,7 +164,7 @@ const Swap = () => {
         </div>
 
         <button
-          className='w-full mt-6 bg-gradient-to-r from-[#574fb0] to-[#fdb0da] text-[#251755] py-4 px-6 rounded-xl font-semibold hover:opacity-90 transition-all shadow-lg hover:shadow-[#fdb0da]/20 text-lg'
+          className='w-full mt-6 bg-gradient-to-r from-[#574fb0] to-[#fdb0da] text-[#251755] py-4 px-6 rounded-xl font-semibold hover:opacity-90 transition-all shadow-lg hover:shadow-[#fdb0da]/20 text-lg cursor-pointer'
           onClick={handleSwap}
         >
           {isSwap ? 'Proccessing' : ' Swap Now'}

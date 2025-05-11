@@ -4,6 +4,9 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'LiquiDEX',
   description: 'Liquidate you Nfts to Any SPL token',
+  icons: {
+    icon: '/zap.svg',
+  },
 };
 
 export default function RootLayout({
