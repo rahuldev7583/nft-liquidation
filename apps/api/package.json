@@ -12,10 +12,22 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.18",
     "@types/express": "^5.0.1",
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/web3.js": "^1.98.2",
+    "@tensor-foundation/amm": "^1.0.4",
+    "@tensor-foundation/common-helpers": "1.0.0-beta.3",
+    "@tensor-foundation/marketplace": "1.0.0-beta.4",
+    "@tensor-foundation/resolvers": "1.0.0-beta.1",
+    "@tensor-oss/tcomp-sdk": "^6.0.0",
+    "@tensor-oss/tensorswap-sdk": "^4.5.0",
+    "bs58": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "tweetnacl": "^1.0.3"
   }
 }
